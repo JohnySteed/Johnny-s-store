@@ -1,0 +1,112 @@
+/* Общие стили */
+html {
+  background: linear-gradient(45deg, #ff0000, #ff00dd);
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1, h2, h3 {
+    margin: 0;
+    color: #ffffff;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  a, p {
+    text-decoration: none;
+    color: #ffffff;
+  }
+  
+  /* Шапка сайта */
+  header {
+    background-color: #7B001C;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center; /* Выравнивание по центру */
+    border-radius: 100px;
+    width: 75%;
+    margin: auto;
+}
+  
+  header h1 {
+    font-size: 24px;
+    margin: 0;
+    display: center; /* Делаем элемент блочно-строчным */
+}
+  
+  nav ul {
+    display: flex; /* Устанавливаем flex-контейнер */
+    justify-content: center; /* Выравниваем элементы по центру по горизонтали */
+}
+  
+  nav li {
+    margin-right: 20px; /* Добавляем отступ между элементами списка */
+}
+  
+  nav a {
+    color: #ffffff;
+    text-decoration: none;
+}
+  /* Контактная форма */
+  .contact {
+    padding: 20px;
+  }
+  
+  .contact h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .contact-form {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+  }
+  
+  .contact-form label {
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    font-size: 16px;
+    box-sizing: border-box; /* Учитываем padding и border в общей ширине */
+  }
+  
+  .contact-form input[type="submit"] {
+    background-color: #7B001C;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+    box-sizing: border-box;
+  }
+  
+  
+  .contact-form input[type="submit"]:hover {
+    background-color: #ffdd00;
+  }
+  footer {
+    background-color: #7B001C;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 100px;
+    width: 75%;
+    margin: auto;
+  }

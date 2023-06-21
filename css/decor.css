@@ -1,0 +1,130 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(40deg, #ff0000, #ff00dd);
+  color: #7B001C;
+}
+
+header {
+  background-color: #7B001C;
+  color: #ffffff;
+  padding: 20px;
+  text-align: center; /* Выравнивание по центру */
+  border-radius: 100px;
+  width: 75%;
+  margin: auto;
+}
+
+h1 {
+  color: #fff;
+  text-align: center;
+}
+
+main {
+  margin: 20px;
+}
+
+.btn_buy {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  background: linear-gradient(40deg, #ff0000, #ff00dd);
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.form-with-background {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  text-align: center;
+  color: #ffffff;
+}
+
+input,
+textarea,
+select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+}
+
+#cart-list {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+#cart-list li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  background-size: 100%;
+  background-repeat: 100%;
+  background-position: 100%;
+}
+
+#cart-list img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+#cart-list .product-info {
+  flex-grow: 1;
+}
+
+#cart-list .product-name {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+#cart-list .product-price {
+  color: #000000;
+}
+
+button#checkout-btn {
+  background-color:  #ff0000;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  text-align: center;
+  /* Дополнительные стили */
+  display: block;
+  margin: 0 auto;
+}
+
+button#checkout-btn:hover {
+  background-color: #7B001C;
+}
+
+footer {
+  background-color: #7B001C;
+  border-radius: 20px;
+  padding: 10px;
+  text-align: center;
+  color: #fff;
+}

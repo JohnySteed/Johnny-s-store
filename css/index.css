@@ -1,0 +1,147 @@
+html {
+  background: linear-gradient(45deg, #ff0000, #ff00dd);
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1, h2, h3 {
+    margin: 0;
+    color: #ffffff;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  a, p {
+    text-decoration: none;
+    color: #ffffff;
+  }
+  
+  /* Шапка сайта */
+  header {
+    background-color: #7B001C;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center; /* Выравнивание по центру */
+    border-radius: 100px;
+    width: 75%;
+    margin: auto;
+}
+  
+  header h1 {
+    font-size: 24px;
+    margin: 0;
+    display: center; /* Делаем элемент блочно-строчным */
+}
+  
+  nav ul {
+    display: flex; /* Устанавливаем flex-контейнер */
+    justify-content: center; /* Выравниваем элементы по центру по горизонтали */
+}
+  
+  nav li {
+    margin-right: 20px; /* Добавляем отступ между элементами списка */
+}
+  
+  nav a {
+    color: #ffffff;
+    text-decoration: none;
+}
+  
+  /* Главный контент */
+  .game-catalog {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: stretch; /* Растянуть блоки игр по высоте */
+  }
+  
+  .game {
+    border: 2px solid #e717b3;
+    padding: 20px;
+    display: inline-block;
+    vertical-align: top;
+    width: 400px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    min-height: 2px; /* Задаем минимальную высоту блока игры */
+    background-color: #7B001C;
+    margin: 10px; /* Отступ между играми */
+  }
+  
+  .game img {
+    max-width: 100%;
+    min-height: 100%; /* Задайте фиксированную высоту изображения */
+    object-fit: cover; /* Чтобы изображение заполняло область с сохранением пропорций */
+    border-radius: 20px;
+  }
+  
+  .game .buy-button {
+    display: flex;
+    justify-content: center; /* Выравнивание по горизонтали */
+    align-items: center; /* Выравнивание по вертикали */
+    background-color: #7B001C;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  .game .buy-button:hover{
+    background-color: #5E2129;
+  }
+  .cta-button {
+    display: inline-block;
+    background-color: #7B001C;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: background-color 0.3s;
+  }
+  .cta-button:hover {
+    background-color: #5E2129;
+  }
+  main {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .hero {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .hero h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+  }
+  .featured-games {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+  }
+  .buy-button {
+    display: inline-block;
+    background-color: #f9f9b2;
+    color: #000000;
+    padding: 8px 16px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: background-color 0.3s;
+  }
+  
+  .buy-button:hover {
+    background-color: #ffdd00;
+  }
+  

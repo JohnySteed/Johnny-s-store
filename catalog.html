@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Johnny's Store</title>
+  <link rel="stylesheet" href="css/catalog.css">
+  
+</head>
+<body>
+  <header>
+    <h1>Johnny's Store</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="catalog.html">Каталог</a></li>
+        <li><a href="info.html">О нас</a></li>
+        <li><a href="contact.html">Контакты</a></li>
+        <li><a href="buy.html">Корзина</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div class="filters">
+        <h2>Фильтры</h2>
+        <select id="genre" name="genre" onchange="filterGames()">
+          <option value="all">Все</option>
+          <option value="action">Экшн</option>
+          <option value="platformer">Платформер</option>
+          <option value="arcade">Аркады</option>
+          <option value="mmorpg">ММОРПГ</option>
+          <option value="races">Гонки</option>
+          <option value="sport">Спортивные</option>
+          <option value="strategies">Стратегии</option>
+        </select>
+      </div>
+    <section class="game-catalog">
+      <div id="game-list"></div>
+    </section>
+  </main>
+  <footer class="footer">
+    <p>&copy; 2023 Johnny's Store. Все права защищены.</p>
+  </footer>
+  <script src="js/game.js"></script>
+  <script src="js/catalog.js"></script>
+  <script src="js/buy.js"></script>
+</body>
+</html>

@@ -1,0 +1,142 @@
+/* Общие стили */
+html{
+  background: repeating-radial-gradient(circle, #ff0000, #ff00dd);
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+
+}
+
+h1, h2, h3 {
+  margin: 0;
+  color: #ffffff;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a, p {
+  text-decoration: none;
+  color: #ffffff;
+}
+  
+  /* Шапка сайта */
+  header {
+    background-color: #7B001C;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center; /* Выравнивание по центру */
+    border-radius: 100px;
+    width: 75%;
+    margin: auto;
+}
+  
+  header h1 {
+    font-size: 24px;
+    margin: 0;
+    display: center; /* Делаем элемент блочно-строчным */
+}
+  
+  nav ul {
+    display: flex; /* Устанавливаем flex-контейнер */
+    justify-content: center; /* Выравниваем элементы по центру по горизонтали */
+}
+  
+  nav li {
+    margin-right: 20px; /* Добавляем отступ между элементами списка */
+}
+  
+  nav a {
+    color: #ffffff;
+    text-decoration: none;
+}
+   /* Главный контент */
+  main {
+    padding: 20px;
+  }
+
+  .game {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+    display: inline-block;
+    vertical-align: top;
+    width: calc(33.33% - 20px); /* Расчет ширины блока на треть экрана с учетом отступов */
+    box-sizing: border-box; /* Учтите границы и отступы внутри блока */
+    border-radius: 20px;
+  }
+  
+  
+  .cart-items img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
+  }
+
+  .cart-items {
+    display: auto;
+    background-color: #7B001C;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: background-color 0.3s;
+  }
+
+  .cart-items {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  .cart-items h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+  }
+  /* Стили для страницы корзины */
+  .cart-items {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .cart-items h2 {
+    margin-bottom: 20px;
+  }
+  
+  #cart-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  #cart-list li {
+    margin-bottom: 10px;
+  }
+  
+  #checkout-button {
+    display: inline-block;
+    background-color:#ff0000;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+  }
+  
+  #checkout-button:hover {
+    background-color: #87233a;
+  }
+    /* Подвал сайта */
+    footer {
+      background-color: #7B001C;
+      color: #ffffff;
+      padding: 20px;
+      text-align: center;
+      border-radius: 100px;
+      width: 75%;
+      margin: auto;
+    }
+    

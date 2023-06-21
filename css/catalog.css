@@ -1,0 +1,177 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+html, body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(40deg, #ff0000, #ff00dd);
+  
+}
+  
+  h1, h2, h3 {
+    margin: 0;
+    color: #ffffff;
+  }
+  
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+  
+  a, p {
+    text-decoration: none;
+    color: #ffffff;
+  }
+/* Шапка сайта*/
+header {
+  background-color: #7B001C;
+  color: #ffffff;
+  padding: 20px;
+  text-align: center; /* Выравнивание по центру */
+  border-radius: 100px;
+  width: 75%;
+  margin: auto;
+}
+  
+header h1 {
+  font-size: 24px;
+  margin: 0;
+  display: center; /* Делаем элемент блочно-строчным */
+}
+  
+nav ul {
+  display: flex; /* Устанавливаем flex-контейнер */
+  justify-content: center; /* Выравниваем элементы по центру по горизонтали */
+}
+  
+nav li {
+  margin-right: 20px; /* Добавляем отступ между элементами списка */
+}
+  
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+}
+.content {
+  flex: 1;
+}
+
+
+/* Для игры */
+.game {
+  border: 2px solid #e717b3;
+  padding: 20px;
+  margin-bottom: 20px;
+  display: inline-block;
+  vertical-align: top;
+  width: 350px;
+  box-sizing: border-box;
+  border-radius: 20px;
+  margin: 10px;
+  background-color: #7B001C;
+  text-align: center;
+}
+
+#game-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Обновленные стили для контейнера игр */
+.game-catalog {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 5px;
+}
+.game img {
+  width: 100%;
+  height: auto; /* Задайте фиксированную высоту изображения */
+  object-fit: cover; /* Чтобы изображение заполняло область с сохранением пропорций */
+  border-radius: 20px;
+}
+
+.game .buy-button {
+  display: flex;
+  justify-content: center; /* Выравнивание по горизонтали */
+  align-items: center; /* Выравнивание по вертикали */
+  background-color: #7B001C;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  text-decoration: none;
+}
+.game .buy-button:hover{
+  background-color: #5E2129;
+}
+
+/* Контейнер каталога */
+.hidden {
+  display: none;
+}
+
+.filters select {
+  width: 200px;
+  height: 35px;
+  padding: 5px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  background-color: #ffffff;
+  appearance: none; /* Убирает стандартные стрелки выбора */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-repeat: no-repeat;
+  background-position: right center;
+  cursor: pointer;
+  text-align: center;
+ }
+ .filters {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; /* Для вертикального выравнивания */
+  text-align: center; /* Для выравнивания текста по центру */
+  margin-top: 20px; /* Необязательное свойство, чтобы добавить отступ сверху */
+  
+}
+
+.filters h2 {
+    margin-bottom: 10px;
+  }
+.filters {
+  display: center;
+  margin-bottom: 25px;
+  column-count: 1; /* Задаем количество колонок */
+}
+.filters label {
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+.filters select:focus {
+  outline: none; /* Убирает выделение при фокусе */
+  border-color: #999;
+  box-shadow: 0 0 5px #999; /* Добавляет тень при фокусе */
+}
+  
+.filters select option {
+  padding: 10px;
+  border-radius: 20px;
+}
+.footer {
+  background-color: #7B001C;
+  color: #ffffff;
+  padding: 20px;
+  text-align: center;
+  border-radius: 100px;
+}
+  
